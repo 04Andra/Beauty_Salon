@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?importjava.lang.String ?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER" vgap="100">
+    <children>
+        <Label text="This is our team" textFill="BLACK" GridPane.rowIndex="0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <HBox GridPane.rowIndex="1" spacing="80">
+            <Label text="Name 1" textFill="BLACK">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+            <Label text="Name 2" textFill="BLACK">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+            <Label text="Name 2" textFill="BLACK">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+        </HBox>
+        <HBox GridPane.rowIndex="2" spacing="10">
+            <Button GridPane.rowIndex="2" onAction="#switchToScene2" layoutX="210.0" layoutY="259.0"
+                    mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;"
+                    text="back" textFill="WHITE">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+            <Button GridPane.rowIndex="2" onAction="#switchToScene5" layoutX="210.0" layoutY="259.0"
+                    mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;"
+                    text="services and prices" textFill="WHITE">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+        </HBox>
+    </children>
+</GridPane>

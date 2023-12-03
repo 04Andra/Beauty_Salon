@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?importjava.lang.String ?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER" vgap="100">
+    <children>
+        <VBox spacing="10" GridPane.rowIndex="0">
+            <Label text="Name">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <TextField fx:id="name"/>
+
+            <Label text="Your phone number">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <TextField fx:id="number"/>
+
+            <Label text="Your email address">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <TextField fx:id="email"/>
+
+            <Label text="Choose an option">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <ComboBox fx:id="box">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Tuns par scurt"/>
+                        <String fx:value="Tuns par mediu"/>
+                        <String fx:value="Tuns par lung"/>
+                        <String fx:value="Vopsit"/>
+                        <String fx:value="Manichiura gel"/>
+                        <String fx:value="Pedichiura gel"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Label text="Choose a date:">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <DatePicker fx:id="date"/>
+
+            <Label text="Choose an hour:">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <Spinner min="7" max="21" fx:id="hour"/>
+
+            <Label text="Do you want to tell us something?">
+                <font>
+                    <Font size="10"/>
+                </font>
+            </Label>
+            <TextField fx:id="message"/>
+
+            <Button onAction="#addToAppointmentList" style="-fx-background-color: #194546;" text="Send"
+                    textFill="WHITE"/>
+
+        </VBox>
+        <Button GridPane.rowIndex="1" onAction="#switchToScene2" layoutX="210.0" layoutY="259.0" mnemonicParsing="false"
+                prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;" text="back" textFill="WHITE">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+    </children>
+</GridPane>

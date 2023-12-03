@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
+    <children>
+        <VBox alignment="CENTER" spacing="60">
+            <Label text="Please enter your name and your password:" textFill="BLACK" GridPane.rowIndex="0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <VBox spacing="10">
+                <Label text="Name">
+                    <font>
+                        <Font size="10"/>
+                    </font>
+                </Label>
+                <TextField fx:id="name"/>
+                <Label text="Password">
+                    <font>
+                        <Font size="10"/>
+                    </font>
+                </Label>
+                <PasswordField fx:id="password"/>
+            </VBox>
+            <HBox spacing="10">
+                <Button GridPane.rowIndex="2" onAction="#switchToScene2" layoutX="210.0" layoutY="259.0"
+                        mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0"
+                        style="-fx-background-color: #194546;"
+                        text="back" textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button GridPane.rowIndex="2" onAction="#switchToScene7" layoutX="210.0" layoutY="259.0"
+                        mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0"
+                        style="-fx-background-color: #194546;"
+                        text="see appointments" textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </HBox>
+        </VBox>
+    </children>
+</GridPane>

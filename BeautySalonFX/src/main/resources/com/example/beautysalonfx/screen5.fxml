@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?importjava.lang.String ?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
+    <children>
+        <VBox spacing="30">
+            <ComboBox fx:id="productComboBox" promptText="Select a service:" onAction="#updatePrice">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Tuns par scurt"/>
+                        <String fx:value="Tuns par mediu"/>
+                        <String fx:value="Tuns par lung"/>
+                        <String fx:value="Manichiura gel"/>
+                        <String fx:value="Pedichiura gel"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Text fx:id="priceDisplayText" />
+
+            <Button GridPane.rowIndex="2" onAction="#switchToScene2" layoutX="210.0" layoutY="259.0"
+                    mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;"
+                    text="back" textFill="WHITE">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            </Button>
+        </VBox>
+    </children>
+</GridPane>

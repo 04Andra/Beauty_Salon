@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
+<!--   <ImageView fx:id="myImageView3" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0"-->
+<!--              GridPane.columnIndex="0"/>-->
+   <VBox alignment="CENTER" spacing="60">
+      <Label text="Welcome to our salon!" textFill="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox spacing="10">
+      <Button onAction="#switchToScene3" layoutX="210.0" layoutY="177.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;" text="make an appointment" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button onAction="#switchToScene6" layoutX="210.0" layoutY="259.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;" text="enter as a coworker" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button onAction="#switchToScene4" layoutX="210.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #194546;" text="see our team" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      </VBox>
+   </VBox>
+</GridPane>

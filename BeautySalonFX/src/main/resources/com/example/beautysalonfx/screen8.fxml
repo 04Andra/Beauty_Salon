@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
+    <children>
+        <VBox spacing="50">
+            <Label text="Stock available:" textFill="BLACK" GridPane.rowIndex="0">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <HBox spacing="30">
+                <HBox spacing="5">
+                    <Label text="Name:">
+                        <font>
+                            <Font size="10"/>
+                        </font>
+                    </Label>
+                    <TextField fx:id="productName"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Color:">
+                        <font>
+                            <Font size="10"/>
+                        </font>
+                    </Label>
+                    <ColorPicker/>
+                </HBox>
+                <Button style="-fx-background-color: #194546;" text="add"
+                        textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </HBox>
+            <VBox spacing="10">
+                <Button onAction="#seeStock" style="-fx-background-color: #194546;" text="see stock"
+                        textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <ListView fx:id="stock" prefHeight="400" prefWidth="600" visible="true"/>
+            </VBox>
+            <HBox spacing="10">
+            <Button onAction="#switchToScene7" style="-fx-background-color: #194546;" text="back"
+                    textFill="WHITE" GridPane.rowIndex="1">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+            <Button onAction="#switchToScene9" style="-fx-background-color: #194546;" text="wallet"
+                    textFill="WHITE" GridPane.rowIndex="1">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+            </HBox>
+        </VBox>
+    </children>
+</GridPane>

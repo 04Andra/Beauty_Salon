@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
+    <children>
+        <VBox spacing="30">
+            <Button onAction="#seeAppointments" style="-fx-background-color: #194546;" text="see appointments"
+                    textFill="WHITE" GridPane.rowIndex="1">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+            <ListView fx:id="appointments" prefHeight="400" prefWidth="600" visible="true"/>
+            <HBox spacing="40">
+                <Button onAction="#switchToScene6" style="-fx-background-color: #194546;" text="back"
+                        textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button onAction="#switchToScene8" style="-fx-background-color: #194546;" text="stock"
+                        textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </HBox>
+        </VBox>
+    </children>
+</GridPane>
