@@ -10,9 +10,12 @@
 <?import javafx.collections.*?>
 <?importjava.lang.String ?>
 
+<?import javafx.scene.image.ImageView?>
 <GridPane xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER" vgap="100">
     <children>
+        <ImageView fx:id="myImageView2" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0"
+                   GridPane.columnIndex="0"/>
         <Label text="This is our team" textFill="BLACK" GridPane.rowIndex="0">
             <font>
                 <Font size="18.0"/>

@@ -9,9 +9,11 @@
 <GridPane xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
     <children>
-<!--        <ImageView fx:id="myImageView2" pickOnBounds="true"  preserveRatio="true" GridPane.rowIndex="0"-->
-<!--                   GridPane.columnIndex="0"/>-->
+        <ImageView fx:id="myImageView2" pickOnBounds="true"  preserveRatio="true" GridPane.rowIndex="0"
+                   GridPane.columnIndex="0"/>
         <VBox alignment="CENTER">
+            <ImageView fx:id="myImageView1" fitWidth="400" fitHeight="400" pickOnBounds="true"  preserveRatio="true" GridPane.rowIndex="0"
+                       GridPane.columnIndex="0"/>
             <Button onAction="#switchToScene2" style="-fx-background-color: #194546;" text="Get started"
                     textFill="WHITE" GridPane.rowIndex="1"/>
         </VBox>

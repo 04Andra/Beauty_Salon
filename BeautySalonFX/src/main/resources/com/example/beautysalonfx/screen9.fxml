@@ -8,9 +8,12 @@
 
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
 <GridPane xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.beautysalonfx.HelloController" alignment="CENTER">
     <children>
+        <ImageView fx:id="myImageView2" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0"
+                   GridPane.columnIndex="0"/>
         <VBox spacing="60">
             <HBox spacing="10">
                 <Label text="Total money:" textFill="BLACK">

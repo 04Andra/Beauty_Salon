@@ -23,6 +23,8 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setFullScreen(true);
+        controller.displayImage();
+        controller.displayImage2();
         stage.show();
     }
 
